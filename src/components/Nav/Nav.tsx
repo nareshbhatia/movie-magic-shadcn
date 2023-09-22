@@ -1,6 +1,7 @@
 'use client';
 
 import { CertCheckbox } from './CertCheckbox';
+import { ModeToggle } from './ModeToggle';
 import { QuerySelector } from './QuerySelector';
 import { usePathname, useRouter, useSearchParams } from 'next/navigation';
 import type { ChangeEvent } from 'react';
@@ -64,6 +65,9 @@ export function Nav() {
               />
             ))}
           </div>
+        </li>
+        <li>
+          <ModeToggle />
         </li>
       </ul>
     </nav>
