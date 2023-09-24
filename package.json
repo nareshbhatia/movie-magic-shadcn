@@ -1,5 +1,6 @@
 {
   "name": "movie-magic-shadcn",
+  "description": "Sample app to demonstrate the use of shadcn/ui, Radix, and Tailwind CSS to build a Next.js app",
   "version": "0.1.0",
   "private": true,
   "scripts": {
