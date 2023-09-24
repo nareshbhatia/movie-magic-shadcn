@@ -4,7 +4,7 @@ A sample application to demonstrate the use of
 [shadcn/ui](https://ui.shadcn.com/), [Radix](https://www.radix-ui.com/), and
 [Tailwind CSS](https://tailwindcss.com/) to build Next.js applications.
 
-Live demo: https://movie-magic-2-movie-magic-nextjs.vercel.app/
+Live demo: https://movie-magic-shadcn.vercel.app/
 
 ![Movie Magic Screenshot](assets/movie-magic-screenshot.png)
 
