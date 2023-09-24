@@ -34,8 +34,8 @@ export function FavoriteToggle({ movieId, checked }: FavoriteToggleProps) {
         onChange={handleChange}
         type="checkbox"
       />
-      <HeartIcon className="peer block h-6 w-6 text-sky-500 peer-checked:hidden" />
-      <HeartFilledIcon className="peer hidden h-6 w-6 text-sky-500 peer-checked:block" />
+      <HeartIcon className="peer block h-6 w-6 text-emphasis-foreground peer-checked:hidden" />
+      <HeartFilledIcon className="peer hidden h-6 w-6 text-emphasis-foreground peer-checked:block" />
     </label>
   );
 }
