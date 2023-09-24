@@ -4,7 +4,6 @@ import { CertCheckbox } from './CertCheckbox';
 import { ModeToggle } from './ModeToggle';
 import { QuerySelector } from './QuerySelector';
 import { usePathname, useRouter, useSearchParams } from 'next/navigation';
-import type { ChangeEvent } from 'react';
 
 export function Nav() {
   const router = useRouter();
@@ -38,8 +37,7 @@ export function Nav() {
     navigate(value === 'all' ? [] : [value], cert);
   };
 
-  const handleCertChange = (e: ChangeEvent<HTMLInputElement>) => {
-    const { id } = e.target;
+  const handleCertChange = (id: string) => {
     const newCerts = cert.includes(id)
       ? cert.filter((c) => c !== id)
       : cert.concat([id]);
