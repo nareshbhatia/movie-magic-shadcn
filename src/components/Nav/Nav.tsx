@@ -34,8 +34,7 @@ export function Nav() {
     router.push(url);
   };
 
-  const handleQueryChange = (e: ChangeEvent<HTMLSelectElement>) => {
-    const { value } = e.target;
+  const handleQueryChange = (value: string) => {
     navigate(value === 'all' ? [] : [value], cert);
   };
 
