@@ -36,7 +36,7 @@ export default async function Home({ searchParams }: MovieMagicRscProps) {
   const movies = await getMovies(searchParams);
   return (
     <div className="mx-auto max-w-3xl p-4">
-      <div className="divide-y divide-slate-200">
+      <div className="divide-y">
         <Nav />
         <MovieList movies={movies} />
       </div>

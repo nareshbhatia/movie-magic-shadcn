@@ -7,7 +7,7 @@ export interface MovieListProps {
 
 export function MovieList({ movies }: MovieListProps) {
   return (
-    <ul className="divide-y divide-slate-200">
+    <ul className="divide-y">
       {movies.map((movie) => (
         <MovieItem key={movie.id} movie={movie} />
       ))}

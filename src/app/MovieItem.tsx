@@ -14,15 +14,13 @@ export function MovieItem({ movie }: MovieItemProps) {
     <article className="flex items-start space-x-6 p-6">
       <Image
         alt={movie.name}
-        className="flex-none rounded-md bg-slate-100"
+        className="flex-none rounded-md"
         height="85"
         src={movie.photoUrl}
         width="68"
       />
       <div className="relative min-w-0 flex-auto">
-        <h2 className="truncate pr-20 font-semibold text-slate-900">
-          {movie.name}
-        </h2>
+        <h2 className="truncate pr-20 font-semibold">{movie.name}</h2>
         <dl className="mt-2 flex flex-wrap text-sm font-medium leading-6">
           <div className="absolute right-0 top-0 flex items-center space-x-1">
             <dt className="text-emphasis-foreground">
@@ -40,9 +38,7 @@ export function MovieItem({ movie }: MovieItemProps) {
 
           <div>
             <dt className="sr-only">Rating</dt>
-            <dd className="rounded px-1.5 ring-1 ring-slate-200">
-              {movie.certification}
-            </dd>
+            <dd className="rounded px-1.5 ring-1">{movie.certification}</dd>
           </div>
           <div className="ml-2">
             <dt className="sr-only">Year</dt>
@@ -53,7 +49,7 @@ export function MovieItem({ movie }: MovieItemProps) {
             <dd className="flex items-center">
               <svg
                 aria-hidden="true"
-                className="mx-2 text-slate-300"
+                className="mx-2"
                 fill="currentColor"
                 height="2"
                 width="2"
@@ -68,7 +64,7 @@ export function MovieItem({ movie }: MovieItemProps) {
             <dd className="flex items-center">
               <svg
                 aria-hidden="true"
-                className="mx-2 text-slate-300"
+                className="mx-2"
                 fill="currentColor"
                 height="2"
                 width="2"
@@ -80,7 +76,7 @@ export function MovieItem({ movie }: MovieItemProps) {
           </div>
           <div className="mt-2 w-full flex-none font-normal">
             <dt className="sr-only">Cast</dt>
-            <dd className="text-slate-400">{movie.cast.join(', ')}</dd>
+            <dd className="text-muted-foreground">{movie.cast.join(', ')}</dd>
           </div>
         </dl>
       </div>
