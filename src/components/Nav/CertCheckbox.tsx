@@ -12,11 +12,13 @@ export function CertCheckbox({ id, checked, onCertChange }: CertCheckboxProps) {
       <Checkbox
         checked={checked}
         id={id}
-        onCheckedChange={() => onCertChange(id)}
+        onCheckedChange={() => {
+          onCertChange(id);
+        }}
       />
       <label
-        htmlFor={id}
         className="text-sm font-medium leading-none peer-disabled:cursor-not-allowed peer-disabled:opacity-70"
+        htmlFor={id}
       >
         {id}
       </label>

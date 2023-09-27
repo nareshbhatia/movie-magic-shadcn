@@ -18,7 +18,9 @@ async function getMovies({ q, cert }: SearchParams): Promise<Movie[]> {
   const searchParamsString = urlSearchParams.toString();
 
   // call the api
-  const { API_URL } = process.env;
+  // eslint-disable-next-line prefer-destructuring
+  const API_URL = process.env.API_URL;
+  // eslint-disable-next-line @typescript-eslint/restrict-template-expressions
   const url = `${API_URL}/movies?${searchParamsString}`;
   console.log('----> HTTP GET', url);
   // ----- No Cached Data -----

@@ -1,6 +1,6 @@
 import { FavoriteToggle } from './FavoriteToggle';
-import type { Movie } from '@/models';
 import { toHoursAndMinutes } from '@/lib/utils';
+import type { Movie } from '@/models';
 import Image from 'next/image';
 
 export interface MovieItemProps {
