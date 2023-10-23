@@ -1,6 +1,6 @@
 'use client';
 
-import { HeartIcon, HeartFilledIcon } from '@radix-ui/react-icons';
+import { Icons } from '@/components/icons';
 
 export interface FavoriteToggleProps {
   movieId: string;
@@ -36,8 +36,11 @@ export function FavoriteToggle({ movieId, checked }: FavoriteToggleProps) {
         onChange={handleChange}
         type="checkbox"
       />
-      <HeartIcon className="peer block h-6 w-6 text-emphasis-foreground peer-checked:hidden" />
-      <HeartFilledIcon className="peer hidden h-6 w-6 text-emphasis-foreground peer-checked:block" />
+      <Icons.heart className="peer block h-6 w-6 text-emphasis-foreground peer-checked:hidden" />
+      <Icons.heart
+        className="peer hidden h-6 w-6 text-emphasis-foreground peer-checked:block"
+        fill="currentColor"
+      />
     </label>
   );
 }
