@@ -47,4 +47,11 @@ docker run -d --name movie-magic-shadcn -p 3000:3000 nareshbhatia/movie-magic-sh
 # Push the docker image to Docker Hub
 docker login -u nareshbhatia
 docker push nareshbhatia/movie-magic-shadcn:1.0.0
+
+# Run in Kubernetes cluster
+minikube start --driver docker
+kubectl apply -f deploy/movie-magic-deployment.yaml
+minikube service movie-magic-service
 ```
+
+Open a browser window at http://localhost:3000/ to see app.
