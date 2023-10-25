@@ -1,5 +1,12 @@
 {
-  "cSpell.words": ["clsx", "imgur", "lucide", "shadcn", "tailwindcss"],
+  "cSpell.words": [
+    "clsx",
+    "imgur",
+    "lucide",
+    "nareshbhatia",
+    "shadcn",
+    "tailwindcss"
+  ],
   "editor.codeActionsOnSave": {
     "source.fixAll.eslint": true
   },
