@@ -1,0 +1,3 @@
+steps:
+  - name: ":movie-magic:"
+    command: "npm ci && npm run build"
