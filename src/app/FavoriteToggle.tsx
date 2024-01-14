@@ -26,6 +26,7 @@ export function FavoriteToggle({ movieId, checked }: FavoriteToggleProps) {
   };
 
   return (
+    // eslint-disable-next-line jsx-a11y/label-has-associated-control
     <label className="relative inline-flex cursor-pointer items-center">
       <input
         className="peer sr-only"
