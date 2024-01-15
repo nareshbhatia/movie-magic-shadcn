@@ -11,7 +11,7 @@ export function MovieItem({ movie }: MovieItemProps) {
   const runtime = toHoursAndMinutes(movie.runtime);
 
   return (
-    <article className="flex items-start space-x-6 p-6">
+    <li className="flex items-start space-x-6 p-6">
       <Image
         alt={movie.name}
         className="flex-none rounded-md"
@@ -80,6 +80,6 @@ export function MovieItem({ movie }: MovieItemProps) {
           </div>
         </dl>
       </div>
-    </article>
+    </li>
   );
 }
