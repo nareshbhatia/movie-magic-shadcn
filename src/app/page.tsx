@@ -1,5 +1,5 @@
-import { MovieList } from './MovieList';
-import { Nav } from '@/components/Nav';
+import { MovieList } from './_components/MovieList';
+import { Nav } from './_components/Nav';
 import type { Movie, SearchParams } from '@/models';
 
 async function getMovies({ q, cert }: SearchParams): Promise<Movie[]> {
@@ -37,7 +37,7 @@ export default async function Home({ searchParams }: MovieMagicRscProps) {
   console.log('----> searchParams', searchParams);
   const movies = await getMovies(searchParams);
   return (
-    <div className="mx-auto max-w-3xl p-4">
+    <div className="mx-auto max-w-3xl">
       <div className="divide-y">
         <Nav />
         <MovieList movies={movies} />
