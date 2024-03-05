@@ -1,6 +1,11 @@
 import { MovieList } from './_components/MovieList';
 import { Nav } from './_components/Nav';
-import type { Movie, SearchParams } from '@/models';
+import type { Movie } from '@/models';
+
+interface SearchParams {
+  q?: string;
+  cert?: string[] | string;
+}
 
 async function getMovies({ q, cert }: SearchParams): Promise<Movie[]> {
   // create searchParamsString
