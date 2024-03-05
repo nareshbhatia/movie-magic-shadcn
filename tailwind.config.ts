@@ -1,8 +1,9 @@
 import type { Config } from 'tailwindcss';
 
-const config: Config = {
+const config = {
   darkMode: ['class'],
   content: ['./src/**/*.{ts,tsx}'],
+  prefix: '',
   theme: {
     container: {
       center: true,
@@ -10,6 +11,10 @@ const config: Config = {
       screens: {
         '2xl': '1400px',
       },
+    },
+    fontFamily: {
+      sans: ['var(--font-inter)'],
+      mono: ['var(--font-roboto-mono)'],
     },
     extend: {
       colors: {
@@ -72,5 +77,6 @@ const config: Config = {
     },
   },
   plugins: [require('tailwindcss-animate')],
-};
+} satisfies Config;
+
 export default config;
